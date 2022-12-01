@@ -1,0 +1,6 @@
+.content__card-info {
+  grid-area: caption;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}

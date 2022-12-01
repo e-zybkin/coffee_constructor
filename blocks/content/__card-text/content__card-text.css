@@ -1,0 +1,9 @@
+.content__card-text {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+}

@@ -1,0 +1,13 @@
+.content__card {
+  max-width: 360px;
+  min-height: 480px;
+  position: relative;
+  background: linear-gradient(0deg, rgba(208, 188, 255, 0.05), rgba(208, 188, 255, 0.05)), #1C1B1F;
+  border-radius: 12px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 312px 168px;
+  grid-template-areas:
+    "picture"
+    "caption";
+}

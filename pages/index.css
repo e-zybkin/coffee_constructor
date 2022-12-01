@@ -1,0 +1,32 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/font.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/wrapper/wrapper.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__text/header__text.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/content/__choose-box/content__choose-box.css);
+@import url(../blocks/content/__choose-column/content__choose-column.css);
+@import url(../blocks/content/__choose-item/content__choose-item.css);
+@import url(../blocks/choose-label/choose-label.css);
+@import url(../blocks/choose-label/__icon/choose-label__icon.css);
+@import url(../blocks/choose-label/__text/choose-label__text.css);
+@import url(../blocks/content/__flag/content__flag.css);
+@import url(../blocks/content/__card-place/content__card-place.css);
+@import url(../blocks/content/__card/content__card.css);
+@import url(../blocks/content/__card-pic/content__card-pic.css);
+@import url(../blocks/content/__card-info/content__card-info.css);
+@import url(../blocks/content/__card-header/content__card-header.css);
+@import url(../blocks/content/__card-text/content__card-text.css);
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+
+

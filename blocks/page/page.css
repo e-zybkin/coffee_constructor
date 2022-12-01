@@ -1,0 +1,6 @@
+.page {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #2A2C2F;
+  font-family: Roboto, Arial, sans-serif;
+}
