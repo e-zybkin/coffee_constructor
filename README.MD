@@ -1,4 +1,5 @@
 <h1 align="center">Coffee constructor</h1>
+
 # Заметки на доработку:
 * Реализовать класс для checkbox
 * Собрать всё вебпаком
