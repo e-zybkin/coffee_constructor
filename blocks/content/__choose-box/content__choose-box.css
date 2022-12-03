@@ -3,6 +3,5 @@
   min-height: 280px;
   display: grid;
   grid-template-columns: repeat(4, 312px);
-  margin-top: 48px;
-  margin-bottom: 28px;
+  margin: 48px auto 28px auto;
 }

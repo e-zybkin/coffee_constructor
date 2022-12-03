@@ -5,7 +5,6 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__text/header__text.css);
-@import url(../blocks/content/content.css);
 @import url(../blocks/content/__choose-box/content__choose-box.css);
 @import url(../blocks/content/__choose-column/content__choose-column.css);
 @import url(../blocks/content/__choose-item/content__choose-item.css);
