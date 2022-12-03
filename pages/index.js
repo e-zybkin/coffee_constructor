@@ -12,6 +12,8 @@ function createCard(item) {
 }
 
 checkboxes.forEach((item) => {
+	console.log(checkboxes)
+
     item.addEventListener('change', () => {
       if (item.checked) {
         components.push(item.value)
