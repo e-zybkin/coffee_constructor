@@ -8,6 +8,7 @@
 @import url(../blocks/content/__choose-box/content__choose-box.css);
 @import url(../blocks/content/__choose-column/content__choose-column.css);
 @import url(../blocks/content/__choose-item/content__choose-item.css);
+@import url(../blocks/content/__choose-item/_type/content__choose-item_type_disabled.css);
 @import url(../blocks/choose-label/choose-label.css);
 @import url(../blocks/choose-label/__icon/choose-label__icon.css);
 @import url(../blocks/choose-label/__text/choose-label__text.css);
@@ -18,14 +19,3 @@
 @import url(../blocks/content/__card-info/content__card-info.css);
 @import url(../blocks/content/__card-header/content__card-header.css);
 @import url(../blocks/content/__card-text/content__card-text.css);
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-
-

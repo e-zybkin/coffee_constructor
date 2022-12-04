@@ -11,29 +11,33 @@ function createCard(item) {
   return view;
 }
 
-checkboxes.forEach((item) => {
-	console.log(checkboxes)
+function arrayUnique(array) {
+  var a = array.concat();
+  for(var i=0; i<a.length; ++i) {
+      for(var j=i+1; j<a.length; ++j) {
+          if(a[i] === a[j])
+              a.splice(j--, 1);
+      }
+  }
 
+  return a;
+}
+
+checkboxes.forEach((item) => {
     item.addEventListener('change', () => {
       if (item.checked) {
         components.push(item.value)
-        if(components.length > 4) {
-          alert("Нельзя вводить больше 4 ингридиентов");
-          components.splice(0);
-          checkboxes.forEach((item) => {
-            item.checked = false;
-          });
-        }
 
         while (cardPlace.firstChild) {
           cardPlace.removeChild(cardPlace.firstChild);
         }
 
         coffeeType.forEach((item) => {
-          let isEqual = JSON.stringify(item.ingredients) === JSON.stringify(components);
-          if(isEqual) {
-            const card = createCard(item);
-            cardPlace.append(card);
+          if(components.every( e => item.ingredients.includes(e))) {
+            if(components.length === item.ingredients.length){
+              const card = createCard(item);
+              cardPlace.append(card);
+            }
           }
         });
 
@@ -53,5 +57,33 @@ checkboxes.forEach((item) => {
           }
         });
       }
+
+      let testAnother = [];
+
+      coffeeType.forEach((item) => {
+        if(components.length > 0) {
+          if(components.every( e => item.ingredients.includes(e))) {
+            testAnother = arrayUnique(testAnother.concat(item.ingredients))
+          }
+
+          checkboxes.forEach((anotherItem) => {
+            if(testAnother.includes(anotherItem.value)){
+              anotherItem.disabled = false;
+              anotherItem.closest("div").classList.remove('content__choose-item_type_disabled')
+            } else {
+              anotherItem.disabled = true;
+              anotherItem.closest("div").classList.add('content__choose-item_type_disabled')
+            }
+          })
+
+        } else if (components.length === 0) {
+          checkboxes.forEach((anotherItem) => {
+            if(item.ingredients.includes(anotherItem.value) === false){
+              anotherItem.disabled = false;
+              anotherItem.closest("div").classList.remove('content__choose-item_type_disabled')
+            }
+          })
+        }
+      })
     })
 });
